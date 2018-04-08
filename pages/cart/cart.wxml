@@ -1,0 +1,50 @@
+<view id="edit">
+  <view><image src="/image/index_icon/address.png" mode="widthFix"></image><text>北京市海淀区</text></view>
+  <view class="btn" bindtap="changeStatus">{{status.name}}</view>
+</view> 
+<view id="cart_content">
+  <block wx:for="{{cart_list}}">
+    <view class="cart_list">
+      <view class="shop">
+        <image src="/image/cart/wxz.png" mode="widthFix"></image>
+        <text>{{item.shop}}</text>
+      </view>
+      <block wx:for="{{item.goods}}" wx:for-index="ids" wx:for-item="goods">
+        <view class="goods">
+          <image src="/image/cart/xz.png" mode="widthFix" style="width:33rpx;margin-right:25rpx;vertical-align:middle;"></image>
+          <view class="goods_img">
+            <image src="/image/cart/goods.png" mode="widthFix" style="width:108rpx;"></image>
+          </view>
+          <view class="right">
+            <text class="title">{{goods.name}}</text>
+            <text class="info">{{goods.color}}</text>
+            <view>
+              <text class="price">￥{{goods.price}}</text>
+              <view class="btn"> 
+                <text class="dec {{goods.num<=1?'active':''}}" bindtap="delss" data-sid="{{index}}" data-gid="{{ids}}">-</text>
+                <text class="num">{{goods.num}}</text>
+                <text class="sum" bindtap="sums" data-sid="{{index}}" data-gid="{{ids}}">+</text>
+              </view>
+            </view>
+          </view>
+        </view>
+      </block>
+    </view>
+  </block>  
+</view>
+<view id="settle">
+    <view style="padding:25rpx;vertical-align:middle;">
+      <image src="/image/cart/xz.png" mode="widthFix" style="width:33rpx;margin-right:25rpx;"></image>
+      <text style="font-size:14px;" data-content="0">全选</text>
+    </view>
+    <view class="sum" wx:if="{{!status.code}}">
+      <text>合计：￥300.00</text>
+      <text>立减：￥0.00</text>
+    </view>
+    <navigator class="settle" wx:if="{{!status.code}}" url="/pages/firm_order/firm_order">
+        去结算(2)
+    </navigator>
+    <view class="del" wx:if="{{status.code}}">
+      删除
+    </view>
+  </view>

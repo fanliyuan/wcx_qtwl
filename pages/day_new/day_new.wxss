@@ -1,0 +1,28 @@
+#banner_bottom1 .sss{
+  display:inline-block;
+  vertical-align:middle;
+}
+#content_shop{
+  margin-top:20rpx;
+  margin-bottom:60rpx;
+}
+#content_shop .content{
+  width:370rpx;
+  background:#fff;
+}
+#content_shop .content .title{
+  font-size:14px;
+  padding:0 20rpx;
+}
+#content_shop .content{
+ margin-bottom:10rpx;
+ display:inline-block;
+}
+#content_shop .content.spe{
+ margin-left:10rpx;
+}
+#content_shop .content .price{
+  padding:10rpx 20rpx;
+  font-size:14px;
+  color:#e4393c;
+}

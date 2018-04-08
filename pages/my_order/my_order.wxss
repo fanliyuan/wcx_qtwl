@@ -1,0 +1,19 @@
+#order_title{
+  display:flex;
+  justify-content:space-around;
+  padding:20rpx 0;
+  background:#fff;
+}
+#order_title view{
+  font-size:16px;
+  position:relative;
+}
+#order_title view.active:after{
+  content:"";
+  position:absolute;
+  display:block;
+  border-bottom:1px solid #e4393c;
+  left:-20rpx;
+  right:-20rpx;
+  bottom:-19rpx;
+}

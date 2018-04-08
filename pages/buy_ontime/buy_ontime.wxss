@@ -1,0 +1,83 @@
+ .floor1{
+   display:flex;
+   justify-content:space-between;
+   padding-bottom:25rpx;
+   font-size:30rpx;
+   font-weight:bold;
+   color:#474747;
+   letter-spacing:3rpx;
+ }
+  .floor1 navigator{
+    font-size:26rpx;
+    color:#9E9E9E;
+    font-weight:normal;
+  }
+  .content{
+    background:#fff;
+    padding:25rpx;
+    margin-bottom:15rpx;
+  }
+  .floor2{
+    display:flex;
+    justify-content:space-between;
+  }
+.floor2 .name{
+  font-size:26rpx;
+  margin:10rpx 0;
+  color:#4D4D4D;
+}
+.floor2 .contain{
+  width:200rpx;
+}
+.floor2 .price{
+  display:flex;
+  justify-content:space-between;
+}
+.floor2 .new{
+  font-size:30rpx;
+  color:#CE3132;
+  font-weight:bold;
+}
+.floor2 .old{
+  font-size:23rpx;
+  color:#989898;
+  text-decoration:line-through;
+}
+.xsjm .logos{
+  background:#fff;
+  text-align:center;
+}
+.list{
+  display:flex;
+  justify-content:space-between;
+}
+.list_item{
+  background:#fff;
+  width:370rpx;
+  margin-bottom:10rpx;
+  padding:20rpx;
+  box-sizing:border-box;
+  position:relative;
+}
+.list_item .jm{
+  position:absolute;
+  right:0;
+  top:0;
+  background:#CE3132;
+  color:#fff;
+  font-size:26rpx;
+  padding:0 13rpx;
+}
+.list_item .price{
+  display:flex;
+  justify-content:space-between;
+  margin-top:10rpx;
+}
+.list_item .title{
+  font-size:30rpx;
+  margin-top:20rpx;
+}
+.list_item .now{
+  font-size:30rpx;
+  color:#D14243;
+}

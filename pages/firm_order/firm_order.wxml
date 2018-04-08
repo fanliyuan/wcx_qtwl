@@ -1,0 +1,59 @@
+<import src="/template/template.wxml"/>
+<view id="address_firm">
+  <image src="/image/cart/address.png" mode="widthFix" style="width:35rpx;"></image>
+  <view class="content">
+    <text>收货人：奈奈生</text> 
+    <text>北京市朝阳区农光南里1号dfdfsfdsfs</text>
+  </view>
+  <view class="number">188****8888</view>
+  <image src="/image/my/right_icon.png" mode="widthFix"></image>
+</view>
+ <image src="/image/cart/splider.png" mode="widthFix" style="width:750rpx;vertical-align:top;"></image>
+<view id="content">
+  <block wx:for="{{c_list.list}}">
+    <template is="confirm_order" data="{{...item}}"></template>
+    <view class="sums">
+      <view>数量</view>
+      <view class="btns">
+        <text class="dec">-</text>
+        <text class="num">1</text>
+        <text>+</text>
+      </view>
+    </view>
+    <view class="way_delivery">
+      <view>配送方式</view>
+      <navigator><text>快递 免邮</text> <image src="/image/my/right_icon.png" style="width:20rpx;" mode="widthFix"></image></navigator>
+    </view>
+    <view class="message">
+      <view class="content">买家留言</view>
+      <input placeholder="(选填：对本次交易的说明)" placeholder-style="font-size:13px;color:#999;"/>
+    </view>
+    <view class="shop_sum" style="text-align:right;">
+      共{{item.sum_num}}件商品，合计：￥<text>{{item.sum_price}}</text>(含运费￥0.0元)
+    </view>
+  </block>
+</view>
+<view id="pay_way">
+  <view class="padStyle" style="border-bottom:1px solid #eee;">支付方式</view>
+  <view class="padStyle">
+    <view>
+      <image src="/image/cart/pay-wx.png" mode="widthFix" style="width:50rpx;margin-right:20rpx;vertical-align:middle;"></image>微信
+    </view>
+    <view>
+       <radio-group style="font-size:14px;" class="radio-group">
+        <label class="radio">
+            <radio color="#e4393c" checked="true" value="0"/>
+        </label>
+       </radio-group>
+    </view>
+  </view>
+</view>
+<view id="firm_order_btn">
+    <view class="firm_btn">
+      去结算(2)
+   </view>
+    <view class="firm_sum">
+      <text>合计：150.00</text>
+      <text>立减：0.00</text>
+    </view>
+</view>

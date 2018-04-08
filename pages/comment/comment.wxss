@@ -1,0 +1,48 @@
+.title{
+  display:flex;
+  justify-content:space-between;
+  background:#fff;
+  font-size:16px;
+  border-top:1px solid #ddd;
+  border-bottom:1px solid #eee;
+  padding:10rpx;
+}
+.title view text{
+  display:block;
+  text-align:center;
+}
+.title view.active{
+  color:#FEA133;
+}
+.content{
+  background:#fff;
+}
+.list_item{
+  padding:0 25rpx;
+  border-bottom:1px solid #eee;
+}
+.list_item .floor1{
+  display:flex;
+  justify-content:space-between;
+  padding:18rpx 0;
+  align-items:center;
+}
+.list_item .floor1 .name{
+  width:400rpx;
+  display:flex;
+  flex-direction:column;
+}
+.list_item .floor1 .name text{
+  font-size:30rpx;
+}
+.list_item .floor1 .times{
+  font-size:30rpx;
+  color:#999;
+}
+.list_item .floor2{
+  font-size:30rpx;
+  color:#444;
+}
+.list_item .floor3 image{
+  margin-right:10rpx;
+}

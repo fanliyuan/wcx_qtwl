@@ -1,0 +1,34 @@
+<scroll-view scroll-y="false" height="100%" style="overflow:hidden;">
+  <view id="title">
+    <block wx:for="{{title_text}}">
+      <text class="{{index == account ?'active':''}}" bindtap="clicks" data-id="{{index}}">{{item}}</text>
+    </block>
+    <view id="over_view" wx:if="{{isShowClassify}}" catchtouchmove="false">
+      <view class="content">
+        <block wx:for="{{over_content}}">
+          <view url="" bindtap="classify_click" class="{{index == classify ?'active':''}}" data-id="{{index}}">{{item}}</view>
+        </block>
+      </view>
+    </view>
+  </view>
+  <block wx:for="{{data_list}}">
+    <view class="shop_title">
+      <image src="{{item.logo}}" mode="widthFix" style="width:100rpx;"></image>
+      <view style="width:450rpx;">
+        <text class="titles">{{item.title}}</text>
+        <text class="detail">
+          <text class="hood">{{item.address}}</text>
+          <text class="distance">{{item.distance}}</text>
+        </text>
+      </view>
+      <view class="btn">
+        进店
+      </view>
+    </view>
+    <view class="img_content">
+      <block wx:for="{{item.img}}" wx:for-index="ids" wx:for-item="pic">
+        <image src="{{pic}}" mode="widthFix"></image>
+      </block>
+    </view>
+  </block>
+</scroll-view>

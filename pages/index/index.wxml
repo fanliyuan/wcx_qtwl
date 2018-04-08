@@ -1,0 +1,243 @@
+<!--index.wxml-->
+<!--<view class="container">
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+  <view class="usermotto">
+    <text class="user-motto">{{motto}}</text>
+  </view>
+</view>-->
+<view>
+    <view class="search-block">
+     <image src="/image/index_icon/address.png" style="width:30.8rpx;height:39.2rpx;vertical-align:middle;margin-left:20rpx;"></image>
+      <text class="address">{{location}}</text>
+      <view class="search-box">
+        <navigator url="/pages/search/search">
+          <icon type="search" size="15" color="#ABABAB"></icon>
+          <text style="color:#ABABAB;font-size:14px;">尼泊尔平底锅</text>
+        </navigator>
+      </view>
+      <view style="display:inline-block;float:right;padding-right:20rpx;">
+        <image src="/image/index_icon/register.png" style="width:40rpx;height:40rpx;vertical-align:middle;"></image>
+        <text style="font-size:13px;margin-left:10rpx;">签到</text>
+      </view>
+    </view>
+    <swiper autoplay="true" interval="5000" duration="200" indicator-dots="true" circular="true" class="banner" indicator-active-color="#fff"> 
+    <block wx:for="{{banner_list}}">
+      <swiper-item>
+        <navigator url="">
+          <image src="{{item.img}}" class="banner_image" mode="top left"></image>
+        </navigator>
+      </swiper-item>
+    </block>
+  </swiper> 
+</view>
+<view class="mainList_index">
+  <view id="mainList_index">
+  <block wx:for="{{mainList_index}}" wx:key="{{}}">
+    <navigator url="{{item.url}}">
+      <image src="{{item.img}}"></image>
+      <text>{{item.title}}</text>
+    </navigator>
+    </block>
+  </view>
+  
+</view>
+<!-- <view style="background:#fff;margin-bottom:20rpx">
+  <scroll-view scroll-x="true" scroll-with-animation="true" id="scroll1" bindscroll="scroll" bindscrolltolower="toRight">
+  
+    <view class="jingxue_list">
+      <block wx:for="{{jingxue_list}}">
+        <navigator>
+          <image src="/image/{{item.pic_url}}"></image>
+          <text>{{item.title}}</text>
+        </navigator>
+      </block>
+    </view>
+  </scroll-view>
+</view> -->
+<!-- <view>
+
+</view>
+<view>
+  <view class="{{isActive[index]}} merchantLsit" bindtap="get_merchant" data-id="{{index}}" wx:for="{{mainList}}">
+    <text>{{item}}</text>
+  </view> -->
+<!-- </view> -->
+<view id="hotNew" bindtap="hot">
+  <image src="/image/index_icon/bg-new.png" mode="widthFix" class="hot_image"></image>
+  <view class="content">
+    <image src="/image/index_icon/hotNew.png" mode="widthFix" class="he"></image>
+     <view class="content_font">
+      <image src="/image/index_icon/img-hot.png" mode="widthFix"></image><image src="/image/index_icon/img-recommend.png" mode="widthFix"></image>
+     </view> 
+     <view class="content_text">
+      <text>今日小雪，吃点什么好呢？</text>
+      <text>今日小雪，吃点什么好呢？</text>
+     </view> 
+  </view>
+</view>
+<view id="activities" style="position:relative;">
+  <view style="height:465rpx;vertical-align:top;" class="sonsa">
+    
+    <view style="height:232rpx;padding-top:20rpx;" class="sonss" bindtap="hot_click">
+      
+         
+     <image src="/image/activity/9.png" mode="aspectifit" class="dago"></image> 
+      <view>
+        <image src="/image/activity/5.png" class="title" mode="aspectFit" style="position:relative;top:20rpx;"></image>
+      </view>
+      <image src="/image/activity/1.png" class="goods" mode="aspectFit"></image>
+      <text style="vertical-align:bottom;font-size:14px;color:#D04343;height:70rpx;width:70rpx;display:inline-block;position:relative;left:-20rpx;">￥888\n<text style="font-size:12px;text-decoration:line-through;color:#9D9D9D">￥1000</text></text>
+    </view>
+    <view  class="sonss" bindtap="free_time">
+       <view>
+        <image src="/image/activity/6.png" class="title asp" mode="aspectFit"></image>
+      </view>
+      <view class="info"><text>100张券限时领</text> </view>
+      
+      <image src="/image/activity/3.png" class="goods" mode="aspectFit"></image>
+      <image src="/image/activity/11.png" class="icon" mode="aspectFit"></image>
+    </view>
+  </view>
+  <view class="sonsa">
+    <view style="width:240rpx;"   class="sonss" bindtap="team_buy">
+       <view>
+        <image src="/image/activity/7.png" class="title" mode="aspectFit"></image>
+      </view>
+      <view class="info"><text>1011人正在参与</text> </view>
+      <image src="/image/activity/2.png" class="goods" mode="aspectFit"></image>
+      <image src="/image/activity/11.png" class="icon" mode="aspectFit"></image>
+    </view>
+    <view style="width:240rpx;"   class="sonss" bindtap="buy_free">
+      <view>
+        <image src="/image/activity/8.png" class="title" mode="aspectFit"></image>
+      </view>
+      <view class="info"><text>100本好书等你领</text> </view>
+      <image src="/image/activity/4.png" class="goods" mode="aspectFit"></image>
+    </view>
+  </view>
+  <view style="width:260rpx;padding-left:10rpx;height:465rpx;border-bottom:2px solid #F4F4F4;vertical-align:top;" class="sonsa" bindtap="sdsc">
+    <image src="/image/activity/12.png" mode="aspectFit" style="height:60rpx;width:200rpx;"></image>
+    <text style="display:inline-block;font-size:14px;color:#949494">星海•中山•万达•罗马</text>
+    <image src="/image/activity/13.png" mode="widthFix" style="width:230rpx;margin:50rpx 10rpx 0;"></image>
+  </view>
+</view>
+<view id="tjShop" style="position:relative">
+  <image src="/image/activity/9.png" mode="aspectifit" class="dago"></image>
+  <scroll-view scroll-x="true" scroll-with-animation="true">
+    <view  id="scroll2">
+      <block wx:for="{{tjShop_list}}">
+        <navigator url="{{item.url}}">
+          <image src="{{item.pic}}" mode="widthFix"></image>
+          <view>
+            {{item.title}}\n<text>{{item.info}}</text>
+          </view>
+        </navigator>
+      </block>
+    </view>
+  </scroll-view>
+</view>
+<!-- <view id="merchant_shop_list">
+  <view id="merchant_list" wx:if="{{isMerchant}}">
+    <navigator class="merchant_shop">
+      <image src="/image/merchant/skill-pro.jpg" mode="aspectFill"></image>
+      <view class="merchant_title">
+        <text class="merchant_name">梦想小店</text>
+        <image src="/image/start5.png"  mode="aspectFill" class="start"></image>
+        <text class="merchant_ontime">08:15-23:20 营业</text>
+        <text class="merchant_classifies">母婴玩具 | 奶粉</text>
+      </view>
+      <view class="distance">
+        <text>190.5km</text>
+      </view>
+    </navigator>
+    <navigator class="merchant_shop">
+      <image src="/image/merchant/skill-pro.jpg" mode="aspectFill"></image>
+      <view class="merchant_title">
+        <text class="merchant_name">梦想小店</text>
+        <image src="/image/start5.png"  mode="aspectFill" class="start"></image>
+        <text class="merchant_ontime">08:15-23:20 营业</text>
+        <text class="merchant_classifies">母婴玩具 | 奶粉</text>
+      </view>
+      <view class="distance">
+        <text>190.5km</text>
+      </view>
+    </navigator>
+    <navigator>
+      <view class="forMore">查看更多</view>
+    </navigator>
+  </view>
+  <view id="shop_list"  wx:if="{{!isMerchant}}">
+     <navigator class="shop_list">
+        <image src="/image/shop/likepro.jpg" mode="aspectFill"></image>
+        <view class="shop_title">
+          <text class="shop_name">双木林硅藻泥定州专卖店</text>
+          <text class="shop_info">双木林硅藻泥</text>
+          <text class="shop_onsale">结束时间:2018-03-19 16:04:00</text>
+          <text class="shop_price"><text class="now_price">￥59.00</text><text class="old_price">￥88.00</text></text>
+        </view>
+        <view class="isOn">
+          <text>进行中</text>
+          <view>></view>
+        </view>
+    </navigator>
+     <navigator class="shop_list">
+        <image src="/image/shop/likepro.jpg" mode="aspectFill"></image>
+        <view class="shop_title">
+          <text class="shop_name">双木林硅藻泥定州专卖店</text>
+          <text class="shop_info">双木林硅藻泥</text>
+          <text class="shop_onsale">结束时间:2018-03-19 16:04:00</text>
+          <text class="shop_price"><text class="now_price">￥59.00</text><text class="old_price">￥88.00</text></text>
+        </view>
+        <view class="isOn">
+          <text>进行中</text>
+          <view>></view>
+        </view>
+    </navigator>
+     <navigator class="shop_list">
+        <image src="/image/shop/likepro.jpg" mode="aspectFill"></image>
+        <view class="shop_title">
+          <text class="shop_name">双木林硅藻泥定州专卖店</text>
+          <text class="shop_info">双木林硅藻泥</text>
+          <text class="shop_onsale">结束时间:2018-03-19 16:04:00</text>
+          <text class="shop_price"><text class="now_price">￥59.00</text><text class="old_price">￥88.00</text></text>
+        </view>
+        <view class="isOn">
+          <text>进行中</text>
+          <view>></view>
+        </view>
+    </navigator>
+    <navigator>
+      <view class="forMore">查看更多</view>
+    </navigator>
+  </view>
+</view> -->
+<view id="inters">
+  <view style="text-align:center;padding:20rpx 0;background:#fff;">
+    <image src="/image/index_icon/love.png" mode="widthFix" style="width:270rpx;"></image>
+  </view>
+  <view class="content">
+    <block wx:for="{{interst_list}}" wx:for-index="goodIdx" wx:for-item="goodItem">
+      <navigator url="{{goodItem.url}}" wx:if="{{goodIdx % 2 ==0}}">
+        <image src="{{goodItem.goods_img}}" mode="widthFix"></image>
+        <text class="info">{{goodItem.goods_name}}</text>
+        <text class="price">￥{{goodItem.goods_price}}<text>{{goodItem.done_num}}人付款</text></text>
+      </navigator>
+      <navigator url="{{goodItem.url}}" wx:if="{{goodIdx % 2 !=0}}" class="spe">
+        <image src="{{goodItem.goods_img}}" mode="widthFix"></image>
+         <text class="info">{{goodItem.goods_name}}</text>
+        <text class="price">￥{{goodItem.goods_price}}<text>{{goodItem.done_num}}人付款</text></text>
+      </navigator>
+    </block>
+  </view>
+</view>
+<view style="text-align:center;padding:10rpx 0;">
+  <image src="/image/index_icon/loading.gif" mode="widthFix" style="width:60rpx;" wx:if="{{isLoading}}"></image>
+  <text style="text-align:center" wx:if="{{isMore}}" style="font-size:14px;color:#999;">没有更多数据了</text>
+</view>
+

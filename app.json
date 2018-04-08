@@ -1,0 +1,76 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/add_newAddress/add_newAddress",
+    "pages/address_for_goods/address_for_goods",
+    "pages/classify_list/classify_list",
+    "pages/goods_detail/goods_detail",
+    "pages/comment/comment",
+    "pages/shop_qt/shop_qt",
+    "pages/qt_only/qt_only",
+    "pages/four_shop/four_shop",
+    "pages/hot_detail/hot_detail",
+    "pages/buy_ontime/buy_ontime",
+    "pages/free_ontime/free_ontime",
+    "pages/buy_team/buy_team",
+    "pages/hot_goods/hot_goods",
+    "pages/hot_new/hot_new",
+    "pages/near_shop/near_shop",
+    "pages/near_shop_map/near_shop_map",
+    "pages/day_new/day_new",
+    "pages/point_shop/point_shop",
+    "pages/firm_order/firm_order",
+    "pages/my_order/my_order",
+    "pages/search/search",
+    "pages/logs/logs",
+    "pages/my/my",
+    "pages/cart/cart",
+    "pages/sale/sale",
+    "pages/classify/classify",
+    "pages/find/find"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#555",
+    "navigationBarTitleText": "首页",
+    "navigationBarTextStyle": "#fff"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "/image/tab/sy.png",
+        "selectedIconPath": "/image/tab/sy1.png"
+      },
+      {
+        "pagePath": "pages/classify/classify",
+        "text": "分类",
+        "iconPath": "/image/tab/fl.png",
+        "selectedIconPath": "/image/tab/fl1.png"
+      },
+      {
+        "pagePath": "pages/find/find",
+        "text": "发现",
+        "iconPath": "/image/tab/fx.png",
+        "selectedIconPath": "/image/tab/fx1.png"
+      },
+      {
+        "pagePath": "pages/cart/cart",
+        "text": "购物车",
+        "iconPath": "/image/tab/cart.png",
+        "selectedIconPath": "/image/tab/cart1.png"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "我的",
+        "iconPath": "/image/tab/tab_my.png",
+        "selectedIconPath": "/image/tab/tab_my1.png"
+      }
+    ],
+    "color": "#909090",
+    "selectedColor": "#CE3132",
+    "backgroundColor": "#eee",
+    "borderStyle": "white"
+  }
+}

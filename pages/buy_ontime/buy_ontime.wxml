@@ -1,0 +1,93 @@
+<view class="content">
+  <view class="floor1">
+    <text>限时抢购|每日更新</text>
+    <navigator>更多特价别错过></navigator>
+  </view>
+  <view class="floor2">
+    <view class="contain">
+      <image src="/image/hot_goods/hot2.png" mode="widthFix" style="width:200rpx;border:1px solid #DFDFDF"></image>
+      <view class="name">俄罗斯进口大牛威化饼干</view>
+      <view class="price">
+        <text class="new">￥29.90</text>
+        <text class="old">￥39.90</text>
+      </view>
+    </view>
+        <view class="contain">
+      <image src="/image/hot_goods/hot2.png" mode="widthFix" style="width:200rpx;border:1px solid #DFDFDF"></image>
+      <view class="name">俄罗斯进口大牛威化饼干</view>
+      <view class="price">
+        <text class="new">￥29.90</text>
+        <text class="old">￥39.90</text>
+      </view>
+    </view>
+        <view class="contain">
+      <image src="/image/hot_goods/hot2.png" mode="widthFix" style="width:200rpx;border:1px solid #DFDFDF"></image>
+      <view class="name">俄罗斯进口大牛威化饼干</view>
+      <view class="price">
+        <text class="new">￥29.90</text>
+        <text class="old">￥39.90</text>
+      </view>
+    </view>
+  </view>
+</view>
+<view class="content">
+  <view class="floor1">
+    <text>限时特价</text>
+    <navigator>更多特价别错过></navigator>
+  </view>
+  <view class="floor2">
+    <view class="contain">
+      <image src="/image/hot_goods/hot2.png" mode="widthFix" style="width:200rpx;border:1px solid #DFDFDF"></image>
+      <view class="name">俄罗斯进口大牛威化饼干</view>
+      <view class="price">
+        <text class="new">￥29.90</text>
+        <text class="old">￥39.90</text>
+      </view>
+    </view>
+        <view class="contain">
+      <image src="/image/hot_goods/hot2.png" mode="widthFix" style="width:200rpx;border:1px solid #DFDFDF"></image>
+      <view class="name">俄罗斯进口大牛威化饼干</view>
+      <view class="price">
+        <text class="new">￥29.90</text>
+        <text class="old">￥39.90</text>
+      </view>
+    </view>
+        <view class="contain">
+      <image src="/image/hot_goods/hot2.png" mode="widthFix" style="width:200rpx;border:1px solid #DFDFDF"></image>
+      <view class="name">俄罗斯进口大牛威化饼干</view>
+      <view class="price">
+        <text class="new">￥29.90</text>
+        <text class="old">￥39.90</text>
+      </view>
+    </view>
+  </view>
+</view>
+<view class="xsjm">
+  <view class="logos">
+    <image src="/image/hot_goods/logo.png" mode="widthFix" style="width:300rpx;"></image>
+  </view>
+  <view class="list">
+    <view class="list_item">
+       <image src="/image/hot_goods/6-1.png" mode="aspectFit" style="width:300rpx;height:300rpx;"></image> 
+      <view class="title">镂空灯笼 提篮风灯 手工艺品复古做旧</view>
+      <view class="price">
+        <text class="now">￥4589</text>
+        <image src="/image/day_new/icon-shop.png" mode="widthFix" style="width:35rpx;"></image>
+      </view>
+      <view class="jm">
+        减免
+      </view>
+    </view>
+       <view class="list_item">
+       <image src="/image/hot_goods/6-2.png" mode="aspectFit" style="width:300rpx;height:300rpx;"></image>  
+      <view class="title">镂空灯笼 提篮风灯 手工艺品复古做旧</view>
+      <view class="price">
+        <text class="now">￥4589</text>
+        <image src="/image/day_new/icon-shop.png" mode="widthFix" style="width:35rpx;"></image>
+      </view>
+       <view class="jm">
+        减免
+      </view>
+    </view>
+  </view>
+</view>

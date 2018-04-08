@@ -1,0 +1,148 @@
+#edit image{
+  width:30rpx;
+  margin-right:20rpx;
+}
+#edit{
+  padding:20rpx;
+  overflow:hidden;
+  background:#fff;
+  border-top:1px solid #eee;
+  border-bottom:1px solid #eee;
+}
+#edit view{
+  display:inline-block;
+  font-size:12px;
+  color:#999;
+}
+#edit .btn{
+  float:right;
+  font-size:14px;
+  color:#e4393c;
+  cursor:pointer;
+}
+#cart_content .cart_list{
+  background:#fff;
+  margin-top:30rpx;
+}
+#cart_content .shop{
+  padding:15rpx 25rpx;
+  border-bottom:1px solid #eee;
+}
+#cart_content .shop image{
+  width:35rpx;
+  margin-right:25rpx;
+ vertical-align:middle;
+}
+#cart_content .shop text{
+  font-size:14px;
+  color:#333;
+  vertical-align:middle;
+}
+#cart_content .goods{
+  padding:25rpx;
+}
+#cart_content .goods .right{
+  display:inline-block;
+  width:457rpx;
+  vertical-align:middle;
+  margin-left:25rpx;
+}
+#cart_content .goods .right>text{
+  display:block;
+}
+#cart_content .goods .goods_img{
+  display:inline-block;
+  width:150rpx;
+  border-top:1px solid #D2D2D2;
+  border-right:1px solid #D2D2D2;
+  border-left:1px solid #9E9E9E;
+  border-bottom:1px solid #9E9E9E;
+  vertical-align:middle;
+  height:150rpx;
+  text-align:center;
+  line-height:150rpx;
+}
+#cart_content .goods .goods_img image{
+
+  vertical-align:middle;
+}
+#cart_content .goods .right .title{
+  font-size:14px;
+  color:#535353;
+}
+#cart_content .goods .right .info{
+  font-size:12px;
+  color:#9E9E9E;
+  margin:5rpx 0 10rpx;
+}
+#cart_content .goods .right .price{
+  color:#e4393c;
+}
+#cart_content .goods .right .btn{
+  float:right;
+}
+#cart_content .goods .right .btn text{
+  font-size:11px;
+  padding:0 10rpx;
+  border:1px solid #D6D6D6;
+  color:#5B5B5B;
+}
+
+#cart_content .goods .right .btn .num{
+  padding:0 25rpx;
+  border-left:none;
+  border-right:none;
+
+}
+#cart_content .goods .right .btn .dec.active{
+  color:#D6D6D6;
+}
+#cart_content{
+  margin-bottom:160rpx;
+}
+#settle{
+  background:#fff;
+  margin-top:50rpx;
+  position:fixed;
+  bottom:0;
+  left:0;
+  width:750rpx;
+  border:1px solid #eee;
+}
+#settle   view{
+  display:inline-block;
+}
+#settle .sum{
+  vertical-align:middle;
+}
+#settle .sum text{
+  display:block;
+  font-size:14px;
+}
+#settle .sum text:last-child{
+  font-size:12px;
+  margin-top:5rpx;
+}
+#settle .settle{
+  width:200rpx;
+  float:right;
+  height:95rpx;
+  line-height:95rpx;
+  text-align:center;
+  font-size:16px;
+  background:#e4393c;
+  color:#fff;
+}
+#settle .del{
+  width:150rpx;
+  border:1px solid #e4393c;
+  border-radius:12rpx;
+  height:60rpx;
+  line-height:60rpx;
+  text-align:center;
+  float:right;
+  margin-top:17rpx;
+  margin-right:30rpx;
+  font-size:32rpx;
+  color:#e4393c;
+}

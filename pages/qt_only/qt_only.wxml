@@ -1,0 +1,7 @@
+
+<view class="qt_search">
+  <template is="searchss"></template>
+  <navigator>分类</navigator>
+</view>
+<import src="/template/template.wxml"/>
+<template is="qttg_goods"></template>

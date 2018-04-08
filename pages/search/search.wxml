@@ -1,0 +1,3 @@
+<view class="center search_title">搜索商品<navigator class="rt in_block" open-type="navigateBack" >＞</navigator></view>
+<input type="text" confirm-type="search" placeholder="请输入关键字..." placeholder-class="key_words" class="seach_box" bindconfirm="searchSale"/>
+<text class="supply">热门搜索</text>

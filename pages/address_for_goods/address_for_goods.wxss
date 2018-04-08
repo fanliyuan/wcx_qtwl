@@ -1,0 +1,23 @@
+.list_item{
+  background:#fff;
+  padding:15rpx 25rpx;
+  font-size:35rpx;
+  margin-bottom:25rpx;
+}
+.floor1{
+  display:flex;
+  justify-content:space-between;
+}
+.floor2{
+  margin-top:20rpx;
+}
+.new_btn{
+  background:#e4393c;
+  color:#fff;
+  padding:20rpx 0;
+  text-align:center;
+  position:fixed;
+  left:0;
+  bottom:0;
+  width:750rpx;
+}

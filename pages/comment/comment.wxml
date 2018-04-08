@@ -1,0 +1,64 @@
+<view class="title">
+  <view>
+    <text>全部评价</text>
+    <text>8</text>
+  </view>
+    <view class="active">
+    <text>好评</text>
+    <text>8</text>
+  </view>
+    <view>
+    <text>中评</text>
+    <text>8</text>
+  </view>
+    <view>
+    <text>差评</text>
+    <text>8</text>
+  </view>
+    <view>
+    <text>有图</text>
+    <text>8</text>
+  </view>
+</view>
+<view class="content">
+  <view class="list_item">
+    <view class="floor1">
+      <view class="user">
+         <image src="/image/3.jpg" mode="center" style="width:80rpx;height:80rpx;border-radius:40rpx;"></image> 
+      </view>
+      <view class="name">
+        <text>lily</text>
+        <image src="/image/start5.png" mode="widthFix" style="width:150rpx;"></image>
+      </view>
+      <text class="times">2018-01-11</text>
+    </view>
+    <view class="floor2">
+      项目后评价（Post Project Evaluation）是指在项目已经完成并运行一段时间后，对项目的目的、执行过程、效益、作用和影响进行系统的、客观的分析和总结的一种技术经济活动。项目后评价于19世纪30年代产生在美国，直到20世纪60年代，才广泛地被许多国家和世界银行、亚洲银行等双边或多边援助组织用于世界范围的资助活动结果评价中。
+    </view>
+    <view class="floor3">
+      <image src="/image/2.jpg" mode="widthFix" style="width:100rpx;"></image>
+      <image src="/image/2.jpg" mode="widthFix" style="width:100rpx;"></image>
+      <image src="/image/2.jpg" mode="widthFix" style="width:100rpx;"></image>
+    </view>
+  </view>
+   <view class="list_item">
+    <view class="floor1">
+      <view class="user">
+         <image src="/image/3.jpg" mode="center" style="width:80rpx;height:80rpx;border-radius:40rpx;"></image> 
+      </view>
+      <view class="name">
+        <text>lily</text>
+        <image src="/image/start5.png" mode="widthFix" style="width:150rpx;"></image>
+      </view>
+      <text class="times">2018-01-11</text>
+    </view>
+    <view class="floor2">
+      项目后评价（Post Project Evaluation）是指在项目已经完成并运行一段时间后，对项目的目的、执行过程、效益、作用和影响进行系统的、客观的分析和总结的一种技术经济活动。项目后评价于19世纪30年代产生在美国，直到20世纪60年代，才广泛地被许多国家和世界银行、亚洲银行等双边或多边援助组织用于世界范围的资助活动结果评价中。
+    </view>
+    <view class="floor3">
+      <image src="/image/2.jpg" mode="widthFix" style="width:100rpx;"></image>
+      <image src="/image/2.jpg" mode="widthFix" style="width:100rpx;"></image>
+      <image src="/image/2.jpg" mode="widthFix" style="width:100rpx;"></image>
+    </view>
+  </view>
+</view>

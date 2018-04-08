@@ -1,0 +1,16 @@
+<import src="/template/template.wxml"/>
+<scroll-view scroll-x style="margin-bottom:20rpx;">
+<view id="team_title">
+  <navigator>女装</navigator>
+ <navigator>女装</navigator>
+ <navigator class="active">女装</navigator>
+ <navigator>女装</navigator>
+ <navigator>女装</navigator>
+ <navigator>女装</navigator>
+ <navigator>女装</navigator>
+ <navigator>女装</navigator>
+ <navigator>女装</navigator>
+ <navigator>女装</navigator>
+</view>
+</scroll-view>
+<template is="goods_team_buy" data="{{...data_list}}"></template>

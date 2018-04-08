@@ -1,0 +1,28 @@
+<view id="search">
+  <navigator url="" style="">
+    <icon type="search" size="16" color="#B4B4B4"></icon>
+    <text class="search_text">搜索想要的内容</text>
+  </navigator>
+</view>
+<view id="content">
+  <scroll-view scroll-y style="height:{{rightHeight}}px" class="left">
+    <block wx:for="{{goods_list}}">
+      <view data-id="{{index}}" bindtap="click" data-url="{{item.url}}" class="{{active_list[index]}}">{{item.goods}}</view>
+    </block>
+  </scroll-view>
+ <scroll-view scroll-y style="height:{{rightHeight}}px" class="right">
+    <block wx:for="{{rmfl}}">
+      <view class="out_content">
+        <text>{{item.title}}</text>
+        <view class="content">
+          <block wx:for="{{item.content}}" wx:for-item="goods">
+            <navigator url="">
+                <image src="{{goods.pic}}" mode="widthFix"></image>
+                <text>{{goods.name}}</text>
+            </navigator>
+          </block>
+        </view>
+      </view>
+    </block>
+  </scroll-view>
+</view>

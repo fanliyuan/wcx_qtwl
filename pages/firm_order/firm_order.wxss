@@ -1,0 +1,118 @@
+#address_firm{
+  display:flex;
+  justify-content:space-between;
+  background:#fff;
+  padding:30rpx;
+  align-items:center;
+}
+#address_firm image{
+  width:23rpx;
+}
+#address_firm .content{ 
+  font-size:14px;
+  margin-left:-40rpx;
+}
+#address_firm .content text{
+  display:block;
+  width:340rpx;
+  white-space:nowrap;
+  text-overflow:ellipsis;
+  overflow:hidden;
+}
+#address_firm .content text:last-child{
+  font-size:12px;
+}
+#address_firm .number{
+  width:200rpx;
+  font-size:14px;
+  text-align:right;
+  margin-right:-40rpx;
+  margin-top:-20rpx;
+}
+#content .sums{
+  background:#fff;
+  padding:15rpx 25rpx;
+  display:flex;
+  justify-content:space-between;
+  font-size:14px;
+}
+#content .btns text{
+  font-size:11px;
+  padding:0 10rpx;
+  border:1px solid #D6D6D6;
+  color:#5B5B5B;
+}
+#content .btns .dec.active{
+  color:#D6D6D6;
+}
+#content .btns .num{
+   padding:0 25rpx;
+  border-left:none;
+  border-right:none;
+}
+#content .way_delivery{
+  display:flex;
+  background:#fff;
+  padding:15rpx 25rpx;
+  justify-content:space-between;
+  font-size:14px;
+  border-top:1px solid #eee;
+  border-bottom:1px solid #eee;
+}
+#content .way_delivery text{
+  color:#999;
+  margin-right:20rpx;
+}
+#content .message{
+  background:#fff;
+  padding:15rpx 25rpx;
+  font-size:14px;
+  display:flex;
+  align-items:center;
+  border-bottom:1px solid #eee;
+}
+#content .message input{
+   display:inline-block; 
+   padding-left:10rpx;
+}
+#content .shop_sum{
+  background:#fff;
+  padding:15rpx 25rpx;
+  font-size:14px;
+  text-align:right;
+}
+#pay_way{
+  margin-top:20rpx;
+  margin-bottom:140rpx;
+}
+#firm_order_btn{
+  position:fixed;
+  bottom:0;
+  left:0;
+  width:750rpx;
+  background:#fff;
+  font-size:14px;
+}
+.firm_sum{
+  width:250rpx;
+  float:right;
+}
+.firm_sum text{
+  display:block;
+  padding:5rpx 0;
+}
+/* .firm_sum text:first-child{
+ padding:5rpx 0;
+}
+.firm_sum text:last-child{
+ padding:5rpx 0;
+} */
+.firm_btn{
+  font-size:16px;
+  float:right;
+  height:50px;
+  line-height:50px;
+  background:#e4393c;
+  color:#fff;
+  padding:0 20rpx;
+}

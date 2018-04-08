@@ -1,0 +1,23 @@
+<import src="/template/template.wxml"/>
+<template is="all_shop_banner" data="{{...banner_list}}"/>
+  <view class="price">
+    <view class="nows">
+      <text class="small">￥</text>
+      <text>29.90</text>
+    </view>
+    <view class="already">
+      <text class="olds">￥82.00</text>
+      <text class="sale_num">已抢4190件</text>
+    </view>
+    <view class="time_end">
+      <text class="times">距结束22:11:40</text>
+      <text class="gets">
+        <text class="contents">已抢75%</text>
+      </text>
+    </view>
+  </view>
+<template is="goods_detail_content"></template>
+
+<template is="goods_detail_comment"></template>
+
+<template is="goods_detail_btn"></template>

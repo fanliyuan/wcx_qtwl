@@ -1,0 +1,112 @@
+#banner .sons{
+  width:750rpx;
+}
+#banner .content{
+  text-align:center;
+  position:relative;
+  top:-100rpx;
+  background:#fff;
+  margin:0 30rpx;
+  border-radius:10rpx;
+  padding-bottom:30rpx;
+  border:1px solid #ddd;
+  box-shadow:1px 1px 5px #ddd;
+}
+#banner .content image{
+  width:130rpx;
+  border-radius:65rpx;
+  margin-top:-60rpx;
+}
+#banner .content text{
+  display:block;
+}
+#banner .content .nickName{
+  font-weight:bold;
+  margin:15rpx 0;
+  color:#333;
+}
+#banner .content .userName{
+  font-size:12px;
+  color:#999;
+}
+#my_order{
+  margin-top:-70rpx;
+}
+.mys{
+
+  background:#fff;
+  margin-bottom:30rpx;
+}
+
+.mys .title{
+  position:relative;
+  padding:30rpx;
+}
+#my_order .title:after{
+  content:"";
+  position:absolute;
+  border-bottom:1px solid #ddd;
+  bottom:0;
+  left:30rpx;
+  right:30rpx;
+  width:700rpx;
+}
+.mys .title text{
+  font-size:15px;
+}
+.mys .title image{
+  width:20rpx;
+
+}
+.mys .title navigator{
+  float:right;
+}
+#my_order .pay_list{
+  padding:30rpx 0;
+}
+#my_order .pay_list view{
+  display:inline-flex;
+  flex-direction:column;
+  width:187rpx;
+  align-items:center;
+}
+#my_order .pay_list view image{
+  width:60rpx;
+}
+#my_order .pay_list view text{
+  font-size:14px;
+  color:#555;
+  margin-top:20rpx;
+}
+#my_others{
+  padding:30rpx;
+  background:#fff;
+  margin-bottom:50rpx;
+}
+#my_others navigator{
+  display:inline-flex;
+  width:335rpx;
+  align-items:center;
+  box-sizing:border-box;
+  padding:15rpx;
+  box-shadow:0 0 5px #ccc;
+}
+#my_others navigator image{
+  width:80rpx;
+  margin-right:15rpx;
+}
+#my_others navigator.active{
+  margin-right:15rpx;
+}
+#my_others navigator.active1{
+  margin-bottom:15rpx;
+}
+#my_others navigator .title{
+  display:block;
+  font-size:16px;
+  color:#333;
+}
+#my_others navigator .info{
+  font-size:12px;
+  color:#999;
+}

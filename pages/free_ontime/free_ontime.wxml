@@ -1,0 +1,63 @@
+<image src="/image/free_ontime/banner.png" mode="widthFix" style="width:750rpx;"></image>
+<view class="banner">
+  <view style="position:relative;" class="ban1">
+    <image src="/image/free_ontime/bg-优惠券.png" mode="widthFix" style="width:720rpx;"></image>
+    <view class="content">
+      <view class="name">优惠券</view>
+      <view class="info">
+        <text class="i1">使用时间截止12月21日</text>
+        <text class="i2">仅限平台供销商品商品使用</text>
+      </view>
+    </view>
+  </view>
+  <view class="floor2">
+    <image src="/image/free_ontime/限时领券.png" mode="widthFix" style="width:720rpx;"></image>
+
+  </view>
+  <view class="floor3">
+    <view class="contain">
+      <image src="/image/free_ontime/bg-优惠券-1.png" mode="widthFix" style="width:355rpx;"></image>
+      <view class="content">
+        <text class="i1">￥<text style="font-size:45rpx;">30</text></text>
+        <text class="i2">满99使用</text>
+        <text class="i3">立即领取</text>
+      </view>
+      <view class="already">
+        <image src="/image/free_ontime/已领取.png" mode="widthFix" style="width:130rpx;"></image>
+      </view>
+    </view>
+     <view class="contain right">
+      <image src="/image/free_ontime/bg-优惠券-1.png" mode="widthFix" style="width:355rpx;"></image>
+      <view class="content">
+        <text class="i1">￥<text style="font-size:45rpx;">30</text></text>
+        <text class="i2">满99使用</text>
+        <text class="i3">立即领取</text>
+      </view>
+      <view class="already">
+        <image src="/image/free_ontime/已领取.png" mode="widthFix" style="width:130rpx;"></image>
+      </view>
+    </view>
+    <view class="contain">
+      <image src="/image/free_ontime/bg-优惠券-1.png" mode="widthFix" style="width:355rpx;"></image>
+      <view class="content">
+        <text class="i1">￥<text style="font-size:45rpx;">30</text></text>
+        <text class="i2">满99使用</text>
+        <text class="i3">立即领取</text>
+      </view>
+      <view class="already">
+        <image src="/image/free_ontime/已领取.png" mode="widthFix" style="width:130rpx;"></image>
+      </view>
+    </view>
+    <view class="contain right">
+      <image src="/image/free_ontime/bg-优惠券-1.png" mode="widthFix" style="width:355rpx;"></image>
+      <view class="content">
+        <text class="i1">￥<text style="font-size:45rpx;">30</text></text>
+        <text class="i2">满99使用</text>
+        <text class="i3">立即领取</text>
+      </view>
+      <view class="already">
+        <image src="/image/free_ontime/已领取.png" mode="widthFix" style="width:130rpx;"></image>
+      </view>
+    </view>
+  </view>
+</view>

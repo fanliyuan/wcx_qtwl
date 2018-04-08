@@ -1,0 +1,80 @@
+<import src="/template/template.wxml"/>
+<view class="contain"></view>
+<view class="banner">
+  <image src="/image/sdsc/首页-四大商场.jpg" mode="widthFix" style="width:750rpx;"></image>
+  <template is="searchss"></template>
+</view>
+<view class="floor1">
+  <view class="content">
+    <view class="active">
+      <text>星海</text>
+      <image src="/image/sdsc/btn-icon-1.png" mode="widthFix" style="width:20rpx;"></image>
+    </view>
+    <view>
+      <text>中山</text>
+      <image src="/image/sdsc/btn-icon-1.png" mode="widthFix" style="width:20rpx;"></image>
+    </view>
+    <view>
+      <text>万达</text>
+      <image src="/image/sdsc/btn-icon-1.png" mode="widthFix" style="width:20rpx;"></image>
+    </view>
+    <view>
+      <text>罗马</text>
+      <image src="/image/sdsc/btn-icon-1.png" mode="widthFix" style="width:20rpx;"></image>
+    </view>
+  </view>
+  <view class="alerts">
+    <!-- <view class="content"> -->
+      <view class="active">一层</view>
+      <view>二层</view>
+      <view>三层</view>
+      <view>一层</view>
+    <!-- </view> -->
+  </view>
+</view> 
+<view class="floor2">
+  <view class="f_item">
+    <view class="name">
+       <view>
+          <image src="/image/near_shop/01.png" mode="widthFix" style="width:130rpx;"></image>
+      </view>
+      <view class="address">
+        <text class="i1">匠心坊</text>
+        <text class="i2">A区 103号</text>
+      </view>
+    </view>
+    <view class="imgs">
+      <navigator>
+        <image src="/image/near_shop/1.png" mode="widthFix" style="width:230rpx;"></image>
+      </navigator>
+      <navigator>
+        <image src="/image/near_shop/2.png" mode="widthFix" style="width:230rpx;"></image>
+      </navigator>
+      <navigator>
+        <image src="/image/near_shop/3.png" mode="widthFix" style="width:230rpx;"></image>
+      </navigator>
+    </view>
+  </view>
+    <view class="f_item">
+    <view class="name">
+       <view>
+          <image src="/image/near_shop/01.png" mode="widthFix" style="width:130rpx;"></image>
+      </view>
+      <view class="address">
+        <text class="i1">匠心坊</text>
+        <text class="i2">A区 103号</text>
+      </view>
+    </view>
+    <view class="imgs">
+      <navigator>
+        <image src="/image/near_shop/1.png" mode="widthFix" style="width:230rpx;"></image>
+      </navigator>
+      <navigator>
+        <image src="/image/near_shop/2.png" mode="widthFix" style="width:230rpx;"></image>
+      </navigator>
+      <navigator>
+        <image src="/image/near_shop/3.png" mode="widthFix" style="width:230rpx;"></image>
+      </navigator>
+    </view>
+  </view>
+</view>

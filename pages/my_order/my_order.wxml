@@ -1,0 +1,28 @@
+<import src="/template/template.wxml"/>
+<view id="order_title">
+<block wx:for="{{list_data}}">
+  <view bindtap="clickTitle" class="{{index == active_id ?'active':''}}" data-id="{{index}}">{{item}}</view>
+</block>
+</view>
+<view style="padding-bottom:60rpx;">
+  <view class="all" wx:if="{{status[0]}}">
+    <block wx:for="{{order_all.shop_data}}">
+      <template is="order_lists" data="{{...item}}"></template>
+    </block>
+  </view>
+  <view class="wait_pay" wx:if="{{status[1]}}">
+    <block wx:for="{{waitPay.shop_data}}">
+      <template is="order_lists" data="{{...item}}"></template>
+    </block>
+  </view>
+  <view class="wait_get" wx:if="{{status[2]}}">
+    <block wx:for="{{waitGet.shop_data}}"> 
+      <template is="order_lists" data="{{...item}}"></template>
+    </block>
+  </view>
+  <view class="wait_comment" wx:if="{{status[3]}}">
+    <block wx:for="{{waitComment.shop_data}}">
+      <template is="order_lists" data="{{...item}}"></template>
+    </block>
+  </view>
+</view>

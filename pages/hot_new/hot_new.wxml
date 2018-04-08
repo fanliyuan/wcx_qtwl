@@ -1,0 +1,47 @@
+<image src="/image/hot_new/1.png" mode="widthFix" style="width:750rpx;"></image>
+<view id="main">
+<block wx:for="{{data1}}">
+  <view class="content1 normals flex_cont">
+      <view style="width:420rpx;margin-right:50rpx;">
+         <text class="title">{{item.title}}</text>
+         <view class="flex_cont">
+            <text class="user">{{item.user}}</text>
+            <view class="flex_cont">
+              <image src="/image/hot_new/comment.png" mode="widthFix" style="width:30rpx;"></image>
+              <text class="small_text">{{item.comment}}</text>
+            </view>
+            <view class="flex_cont">
+              <image src="/image/hot_new/star.png" mode="widthFix" style="width:30rpx;"></image>
+              <text class="small_text">{{item.star}}</text>
+            </view>
+            <image src="/image/hot_new/close.png" mode="widthFix" style="width:20rpx;"></image>
+         </view>
+      </view>
+      <image src="{{item.img}}" mode="widthFix" style="width:230rpx;"></image>
+  </view>
+  <view class="content2 normals" wx:if="{{data2[index]}}">
+    <text class="title">{{data2[index].title}}</text>
+    <view>
+      <block wx:for="{{data2[index].img}}" wx:for-index="ids" wx:for-item="images">
+        <image src="{{images}}" mode="widthFix" style="width:230rpx;margin-right:5rpx;"></image>
+        <!-- <image src="/image/hot_new/3.png" mode="widthFix" style="width:230rpx;margin-right:5rpx;"></image>
+        <image src="/image/hot_new/4.png" mode="widthFix" style="width:230rpx;"></image> -->
+      </block>
+    </view>
+      <view class="flex_cont" style="margin-top:15rpx;">
+          <view class="flex_cont" style="width:400rpx;">
+            <text class="user">{{data2[index].user}}</text>
+            <view class="flex_cont">
+              <image src="/image/hot_new/comment.png" mode="widthFix" style="width:30rpx;"></image>
+              <text class="small_text">{{data2[index].comment}}</text>
+            </view>
+            <view class="flex_cont">
+              <image src="/image/hot_new/star.png" mode="widthFix" style="width:30rpx;"></image>
+              <text class="small_text">{{data2[index].star}}</text>
+            </view>
+          </view>
+            <image src="/image/hot_new/close.png" mode="widthFix" style="width:20rpx;"></image>
+         </view>
+  </view>
+  </block>
+</view>

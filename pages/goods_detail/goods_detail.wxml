@@ -1,0 +1,6 @@
+<import src="/template/template.wxml"/>
+<template is="all_shop_banner" data="{{...banner_list}}"/>
+<template is="goods_detail_content"></template>
+<template is="goods_detail_comment"></template>
+<template is="goods_detail_btn" data="{{...goods_data}}"></template>
+<template is="toast_show" data="{{...info_toast}}"></template>

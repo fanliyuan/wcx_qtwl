@@ -1,0 +1,57 @@
+.qt_btn{
+  position:fixed;
+  bottom:0;
+  left:0;
+  background:#fff;
+  padding:20rpx 0;
+  width:750rpx;
+}
+.qt_btn text{
+  font-size:32rpx;
+  color:#333;
+  display:inline-block;
+  width:250rpx;
+  text-align:center;
+  box-sizing:border-box;
+}
+.qt_btn text.active{
+  border-left:1px solid #ddd;
+  border-right:1px solid #ddd;
+}
+.qt_btn1{
+  background:#fff;
+  display:flex;
+  justify-content:space-between;
+  padding:0 20rpx;
+  height:60rpx;
+  align-items:center;
+}
+.qt_btn1 text{
+  font-size:30rpx;
+  color:#333;
+  box-sizing:border-box;
+  display:block;
+  line-height:60rpx;
+}
+.qt_btn1 text.active{
+  border-bottom:2px solid #e4393c;
+}
+.banner{
+  position:relative;
+}
+.banner .content{
+  position:absolute;
+  bottom:0;
+  left:0;
+  width:750rpx;
+  display:flex;
+  justify-content: space-between;
+  color:#fff;
+  box-sizing:border-box;
+  padding:10rpx 20rpx;
+}
+.banner .content .i1 .info{
+  font-size:30rpx;
+  vertical-align:top;
+  margin-top:-30rpx;
+}

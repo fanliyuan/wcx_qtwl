@@ -1,0 +1,314 @@
+<template name="order_lists">
+  <view class="order_title">
+    <text class="shop_name">{{shop_name}}</text>
+    <text class="status">{{status}}</text>
+  </view>
+  <block wx:for="{{goods}}">
+    <view class="order_details">
+      <image src="/image/cart/goods.png" mode="widthFix"></image>
+      <view class="content_main">
+        <text class="title">{{item.title}}</text>
+        <text class="color">颜色分类</text>
+        <text class="service">七天退换</text> 
+      </view>
+      <view class="content_price">
+        <text class="price">￥{{item.price}}</text>
+        <text class="num">×{{item.num}}</text>
+      </view>
+    </view>
+ </block>
+  <view class="order_num">
+    <text>共{{sum_num}}件商品 合计:¥{{sum_price}}(含用费¥0.0元)</text>
+  </view>
+  <view class="order_btn">
+    <view wx:if="{{sz.ckwl}}">查看物流</view>
+    <view wx:if="{{sz.ckwl}}">延长收货</view>
+    <view wx:if="{{sz.ckwl}}">确认收货</view>
+    <view wx:if="{{sz.pjdd}}">评价订单</view>
+    <view wx:if="{{sz.qxdd}}">取消订单</view> 
+    <view class="special" wx:if="{{sz.qxdd}}">付款</view>
+  </view>
+</template>
+<template name="confirm_order">
+   <view class="order_title">
+    <text class="shop_name">{{shop_name}}</text>
+  </view>
+  <block wx:for="{{goods}}">
+    <view class="order_details">
+      <image src="/image/cart/goods.png" mode="widthFix"></image>
+      <view class="content_main">
+        <text class="title">{{item.title}}</text>
+        <text class="color">颜色分类</text>
+        <text class="service">七天退换</text>
+      </view>
+      <view class="content_price">
+        <text class="price">￥{{item.price}}</text>
+        <text class="num">×{{item.num}}</text>
+      </view>
+    </view>
+ </block>
+</template>
+<template name="goods_team_buy">
+  <view class="hot_team">
+  <block wx:for="{{list}}">
+    <view class="content">
+      <view>
+        <image src="{{item.img}}" mode="widthFix" style="width:160rpx;">
+      </image>
+      </view>
+      <view class="introduction">
+        <text class="title">{{item.name}}</text>
+        <text class="info">{{item.info}}</text>
+        <view class="count">
+          <text class="active">已抢{{item.owe}}件</text>
+          <text class="percent">{{item.percent}}%</text>
+        </view>
+        <view class="price">
+          <text class="now">￥{{item.now}}</text>
+          <text class="old">￥{{item.old}}</text>
+        </view>
+      </view>
+      <!-- <view class="btn_content"> -->
+        <navigator class="btn" url="/pages/hot_detail/hot_detail">马上抢></navigator >
+      <!-- </view> -->
+    </view>
+  </block>
+</view>
+</template>
+<template name="all_shop_banner">
+  <swiper autoplay="true" interval="5000" duration="200" indicator-dots="true" circular="true" class="banner" indicator-active-color="#fff"> 
+      <block wx:for="{{list}}">
+        <swiper-item>
+          <navigator url="">
+            <image src="{{item}}" class="banner_image" mode="widthFix" style="width:750rpx;"></image>
+          </navigator>
+        </swiper-item>
+      </block>
+    </swiper>
+</template>
+<template name="goods_detail_content">
+  <view class="detail_content">
+  <view class="goods_name">
+    <text class="goods">商品名 俄罗斯进口大牛威化饼干</text>
+    <view style="color:#e4393c;">￥99.00<text style="text-decoration:line-through;color:#999;font-size:30rpx;margin-left:10rpx;">￥100.00</text></view>
+    <view class="infos">
+      <text>快递：0.00</text>
+      <text>月销420笔</text>
+      <text>上海</text> 
+    </view>
+  </view>
+  <view class="padStyle normal">
+    <text>正品保证</text>
+    <text>急速退款</text>
+    <text>平台暂不支持退货</text>
+    <view bindtap="service_show">></view>
+  </view>
+  <view class="padStyle normal">
+    <text>已选：F80（17-27英寸）（尺寸规格）</text>
+    <view bindtap="info_show">></view>
+  </view>
+  <!-- <view class="padStyle normal" style="margin-top:-25rpx;margin-bottom:0;border-top:1px solid #eee;">
+    <text>产品参数</text>
+    <view>></view>
+  </view> -->
+</view>
+</template>
+
+<template name="goods_detail_comment">
+  <view class="detail_content">
+  <view class="comment_boundary">
+    <image src="/image/hot_detail/icon-evaluate.png" mode="widthFix" style="width:40rpx;"></image>
+    <text style="margin-left:10rpx;">评价</text>
+  </view>
+  <view class="comment">
+    <text class="honey_goods">宝贝评价（884）</text>
+    <view class="honey_point">
+      <text>质量不错(232)</text>
+      <text>实惠(232)</text>
+      <text>和描述一致(232)</text>
+      <text>晒图(232)</text>
+      <text>质量一般(232)</text>
+    </view>
+    <view class="user_comment">
+      <view>
+        <view class="user_info">
+          <!-- <view> -->
+            <image src="/image/hot_detail/nav-icon-user.active.png" mode="widthFix" style="width:80rpx;"></image>
+          <!-- </view> -->
+          <view class="user_names">
+            <text style="font-size:12px;margin-bottom:10rpx;">用户名</text>
+            <view style="display:flex;">
+                <image src="/image/hot_detail/btn-icon-collection-2.png" mode="widthFix" style="width:25rpx;"></image>
+                <image src="/image/hot_detail/btn-icon-collection-2.png" mode="widthFix" style="width:25rpx;"></image>
+                <image src="/image/hot_detail/btn-icon-collection-2.png" mode="widthFix" style="width:25rpx;"></image>
+                <image src="/image/hot_detail/btn-icon-collection-2.png" mode="widthFix" style="width:25rpx;"></image>
+                <image src="/image/hot_detail/btn-icon-collection-2.png" mode="widthFix" style="width:25rpx;"></image>
+            </view>
+          </view>
+        </view>
+        <view class="comment_content">好好哈哈好哦啊很好哈哈哈哈哈</view>
+        <view class="goods_style">FBO(17-27英寸)</view>
+      </view>
+      <view class="comment_more">
+        <text>查看全部评价</text>
+      </view>
+    </view>
+  </view>
+  <view class="shops_detail">
+    <!-- <view> -->
+      <image src="/image/hot_detail/1.png" mode="widthFix" style="width:85rpx;"></image>
+    <!-- </view> -->
+    <view class="shop_name">
+      <text>店铺名称</text>
+      <text class="sec">店铺类型</text>
+    </view>
+    <view class="shop_more">
+      <navigator>进店逛逛</navigator>
+    </view>
+  </view>
+  </view>
+</template>
+
+<template name="goods_detail_btn">
+  <view class="detail_content">
+  <view class="goods_btns">
+    <navigator>
+      <image src="/image/hot_detail/btn-icon-service.png" mode="widthFix" style="width:38rpx;"></image>
+     <text>客服</text>
+    </navigator>
+    <navigator>
+      <image src="/image/hot_detail/btn-icon-collection-1.png" mode="widthFix" style="width:38rpx;"></image>
+      <text>收藏</text>
+    </navigator>
+    <navigator>
+     <image src="/image/hot_detail/btn-icon-store.png" mode="widthFix" style="width:38rpx;"></image>
+     <text>店铺</text>
+    </navigator>
+    <navigator class="big_btn fir">加入购物车</navigator>
+    <navigator class="big_btn sec">立即购买</navigator>
+  </view>
+  </view>
+  <view class="goods_detail_service" wx:if="{{service}}" bindtap="service_close">
+  <view class="content" catchtap="service_show">
+    <view class="name">基础服务</view>
+    <view class="service">
+      <view>
+          <image src="/image/hot_detail/01.png" mode="widthFix" style="width:55rpx;margin:0 30rpx;"></image>
+      </view>
+      <view class="contain">
+        <text class="i1">基础服务</text>
+        <text class="i2">该商品有中国人保承保正品保证险</text>
+      </view>
+    </view>
+     <view class="service">
+      <view>
+          <image src="/image/hot_detail/02.png" mode="widthFix" style="width:55rpx;margin:0 30rpx;"></image>
+      </view>
+      <view class="contain">
+        <text class="i1">急速退款</text>
+        <text class="i2">急速退款是为诚信会员提供的退款退货流程的专享特权，额度是根据每个用户当前的信誉评级情况而定</text>
+      </view>
+    </view>
+     <view class="service">
+      <view>
+          <image src="/image/hot_detail/03.png" mode="widthFix" style="width:55rpx;margin:0 30rpx;"></image>
+      </view>
+      <view class="contain">
+        <text class="i1">七天无理由退换</text>
+        <text class="i2">消费者在满足7天无理由退换货申请条件的前提下，可以提出7天无理由退换货的申请</text>
+      </view>
+    </view>
+    <view>
+      <view class="btn" catchtap="service_close">完成</view>
+    </view>
+  </view>
+</view>
+<view class="goods_details_info"  wx:if="{{goods_info}}" bindtap="info_close">
+  <view class="content" catchtap="info_show">
+    <view class="floor1">
+      <view>
+        <image src="/image/hot_detail/ms_detail.png" mode="widthFix" style="width:200rpx;margin-top:-40rpx;border:1px solid #ddd;margin-right:25rpx;"></image>
+      </view>
+      <view>
+        <text class="i1">￥99.00</text>
+        <text class="i2">库存6666</text>
+        <text class="i2">已选</text>
+      </view>
+    </view>
+    <view class="floor2">
+      <view class="title">颜色</view> 
+      <view class="info_detail">
+        <block wx:for="{{modal_data.color}}">
+          <text wx:key="id" class="{{ index == activeId?'active':''}}" bindtap="chooseColor" data-id="{{index}}">{{item.name}}</text>
+        </block>
+      </view>
+    </view>
+    <view class="floor3">
+      <view class="title">尺码</view>
+      <view class="info_detail">
+        <block wx:for="{{modal_data.size}}">
+          <text wx:key="id" class="{{ index == activeSize?'active':''}}" bindtap="chooseSize" data-id="{{index}}">{{item.name}}</text>
+        </block>
+      </view>
+    </view>
+    <view class="floor4">
+      <view class="title">购买数量</view>
+      <view class="info_detail">
+        <text>-</text>
+        <text>1</text>
+        <text>+</text>
+      </view>
+    </view>
+    <view class="btn" catchtap="info_done">完成</view>
+  </view>
+</view>
+</template>
+
+
+<!--奇通特供  -->
+<template name="qttg_goods">
+  <view class="qtsc_goods">
+  <view class="goods_items">
+    <image src="/image/goods/index_02.png" mode="widthFix" style="width:370rpx;"></image>
+    <view class="name">镂空灯笼 提篮风灯手工艺品复古做旧</view>
+    <view class="info">
+      <text class="price">￥4586</text>
+      <text class="num">68人付款</text>
+    </view>
+  </view>
+  <view class="goods_items active">
+    <image src="/image/goods/index_02.png" mode="widthFix" style="width:370rpx;"></image>
+    <view class="name">镂空灯笼 提篮风灯手工艺品复古做旧</view>
+    <view class="info">
+      <text class="price">￥4586</text>
+      <text class="num">68人付款</text>
+    </view>
+  </view>
+  <view class="goods_items">
+    <image src="/image/goods/index_02.png" mode="widthFix" style="width:370rpx;"></image>
+    <view class="name">镂空灯笼 提篮风灯手工艺品复古做旧</view>
+    <view class="info">
+      <text class="price">￥4586</text>
+      <text class="num">68人付款</text>
+    </view>
+  </view>
+</view>
+</template>
+<!--奇通特供  -->
+
+<!--搜索框  -->
+
+  <template name="searchss">
+    <navigator class="search_all">
+      <icon type="search" size="18" color="#B3B4B4"></icon>
+      <text>蔷薇海洋文艺书店</text>
+    </navigator>
+  </template>
+<!--搜索框  -->
+<!--toast  -->
+<template name="toast_show">
+  <view class="toasts" wx:if="{{isShow}}">
+    <text>{{title}}</text>
+  </view>
+</template>
+<!--toast  -->

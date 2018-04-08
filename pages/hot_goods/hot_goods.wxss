@@ -1,0 +1,27 @@
+#hot_title{
+   display:flex; 
+  height:110rpx;
+  margin-bottom:10rpx;
+}
+#hot_title .title{
+  background:#333;
+  color:#fff;
+  height:100%;
+  display:flex;
+  align-items:center;
+  flex-direction:column;
+  justify-content:center;
+  width:187.5rpx;
+}
+#hot_title .title .fir{
+  font-size:16px;
+  display:block;
+  margin-bottom:10rpx;
+}
+#hot_title .title .sec{
+  font-size:14px;
+  display:block;
+}
+#hot_title .title.active{
+  background:#CE3132;
+}

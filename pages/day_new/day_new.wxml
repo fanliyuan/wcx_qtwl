@@ -1,0 +1,21 @@
+<view style="padding:30rpx 0;background:#fff;margin-bottom:20rpx;">
+  <image src="/image/day_new/img-banner.png" mode="widthFix" style="width:750rpx;"></image>
+</view>
+<view id="banner_bottom1">
+  <view class="sss">
+    <image src="/image/day_new/img-01.png" mode="widthFix" style="width:350rpx;"></image>
+  </view>
+  <view class="sss">
+    <image src="/image/day_new/img-02.png" mode="widthFix"  style="width:400rpx;display:block;"></image>
+    <image src="/image/day_new/img-02.png" mode="widthFix" style="width:400rpx;display:block;"></image>
+  </view>
+</view>
+<view id="content_shop">
+  <block wx:for="{{data_list}}">
+    <view class="content {{index % 2 !=0?'spe':''}}">
+      <image src="{{item.img}}" mode="widthFix" style="width:370rpx;"></image>
+      <view class="title">{{item.title}}</view>
+      <view class="price"><text>{{item.price}}</text><image src="/image/day_new/icon-shop.png" mode="widthFix" style="width:35rpx;float:right;"></image></view>
+    </view>
+  </block>
+</view>

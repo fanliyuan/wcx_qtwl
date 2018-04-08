@@ -1,0 +1,25 @@
+<import src="/template/template.wxml"/>
+<view class="banner">
+  <image src="/image/sdsc/1.jpg" mode="widthFix" style="width:750rpx;"></image>
+  <view class="content">
+    <view class="i1">
+      <image src="/image/sdsc/奇通商城300x90.jpg" mode="widthFix" style="width:100rpx;border-radius:10rpx;vertical-align:top;margin-right:20rpx;"></image>
+      <text class="info">奇通商城旗舰店</text>
+    </view>
+    <view class="i2">
+      <image src="/image/sdsc/2.png" mode="widthFix" style="width:100rpx;"></image>
+    </view>
+  </view>
+</view>
+<view class="qt_btn1">
+  <text>店铺首页</text>
+  <text class="active">全部宝贝</text>
+  <text>新品上线</text>
+  <text>晒单动态</text>
+</view>
+<template is="qttg_goods"></template>
+<view class="qt_btn">
+  <text>商品分类</text>
+  <text class="active">特价商品</text>
+  <text>联系我们</text>
+</view>

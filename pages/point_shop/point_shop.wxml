@@ -1,0 +1,17 @@
+<view id="point_title">
+  <view class="i1">当前积分</view>
+  <view class="i2">54</view>
+  <view class="i3">兑换记录</view>
+</view>
+<image src="/image/point_shop/banner.png" mode="widthFix" style="width:750rpx;"></image>
+<view class="hhfq">好货疯抢</view>
+<view id="point_list">
+<block wx:for="{{list}}">
+  <view class="point_content {{index % 2 !=0?'sec':''}} spe">
+      <image src="{{item.img}}" mode="widthFix"></image>
+      <text class="title">{{item.title}}</text>
+      <text class="old_price">{{item.old_price}}</text>
+      <text class="now_price">{{item.new}}<text style="font-size:12px;margin-left:10rpx;">积分</text><text class="want_persons">{{item.num}}人想买</text></text>
+    </view>
+</block>
+</view>

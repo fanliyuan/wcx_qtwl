@@ -1,0 +1,43 @@
+<view id="banner">
+  <image src="/image/my/my-bg.png" mode="widthFix" class="sons"></image>
+  <view class="content">
+    <image src="{{avatar[0]}}" mode="widthFix"></image>
+    <text class="nickName">{{avatar[1]}}</text>
+    <text class="userName">用户名:123456789</text>
+  </view>
+</view>
+<view id="my_order" class="mys">
+  <view class="title"><text>我的订单</text><navigator url="/pages/my_order/my_order"><image src="/image/my/right_icon.png" mode="widthFix"></image></navigator></view>
+  <view class="pay_list">
+    <view>
+      <image src="/image/my/icon-1.png" mode="widthFix"></image>
+      <text>待付款</text>
+    </view>
+     <view>
+      <image src="/image/my/icon-2.png" mode="widthFix"></image>
+      <text>待收货</text>
+    </view>
+     <view>
+      <image src="/image/my/icon-3.png" mode="widthFix"></image>
+      <text>待评价</text>
+    </view>
+     <view>
+      <image src="/image/my/icon-4.png" mode="widthFix"></image>
+      <text>退货/售后</text>
+    </view>
+  </view>
+</view>
+<view id="my_wallet" class="mys">
+  <view class="title"><text>我的钱包</text><navigator><image src="/image/my/right_icon.png" mode="widthFix"></image></navigator></view>
+</view>
+<view id="my_others">
+  <block wx:for="{{my_others}}">
+    <navigator class="{{index %2 ==0 ?'active':''}} {{index % 4 ==0 ?'active1':''}}">
+      <image src="{{item.pic}}" mode="widthFix"></image>
+      <view>
+        <text class="title">{{item.title}}</text>
+        <text class="info">{{item.info}}</text>
+      </view>
+    </navigator>
+  </block>
+</view>

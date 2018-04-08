@@ -1,0 +1,20 @@
+.search_title{
+  padding:15rpx 15rpx;
+  background:#eee;
+  font-size:16px;
+}
+.key_words{
+  font-size:12px;
+  color:#ddd;
+}
+.seach_box{
+  border:1px solid #bbb;
+  margin:40rpx 40rpx 20rpx;
+  border-radius:3px;
+  padding-left:20rpx;
+}
+.supply{
+  font-size:12px;
+  margin-left:40rpx;
+  color:#888;
+}

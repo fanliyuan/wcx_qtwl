@@ -1,0 +1,19 @@
+#team_title{
+  width:1500rpx;
+  background:#fff;
+  display:flex;
+  justify-content:space-between;
+  padding:0 25rpx;
+}
+#team_title navigator{
+  display:inline-block;
+  width:80rpx;
+  font-size:14px;
+  color:#C7C7C7;
+  padding:25rpx 0;
+}
+#team_title navigator.active{
+  color:#CE3132;
+  border-bottom:2px solid #CE3132;
+  font-weight:bold;
+}

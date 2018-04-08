@@ -1,0 +1,23 @@
+<view class="content">
+  <view class="list_item">
+    <view class="floor1">
+      <text>lifen</text>
+      <text>13554***9555</text>
+    </view>
+    <view class="floor2">
+      <text>北京 北京市 丰台区</text>
+      <text>花乡天兴家园43号楼3423</text>
+    </view>
+  </view>
+    <view class="list_item">
+    <view class="floor1">
+      <text>lifen</text>
+      <text>13554***9555</text>
+    </view>
+    <view class="floor2">
+      <text>北京 北京市 丰台区</text>
+      <text>花乡天兴家园43号楼3423</text>
+    </view>
+  </view>
+</view>
+<view class="new_btn">新增收货地址</view>

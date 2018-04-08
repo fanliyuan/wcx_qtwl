@@ -1,0 +1,39 @@
+<import src="/template/template.wxml"/>
+<view class="searchs">
+  <template is="searchss"></template>
+  <view class="fl">分类</view>
+</view>
+<view class="title">
+  <view class="active">综合</view>
+  <view>销量</view>
+  <view>价格</view>
+  <view>筛选</view>
+</view>
+<view>
+  <view class="list_item">
+    <view>
+      <image src="/image/list_01.png" mode="widthFix" style="width:255rpx;"></image>
+    </view>
+    <view class="content">
+      <text class="name">蓝帆24双劳保手套棉纱线手套防滑棉线尼龙工作加厚防护劳保用居上海市</text>
+      <text class="price">￥59.00</text>
+      <view class="info">
+        <text>3052条评价</text>
+        <text style="margin-left:30rpx;">97%好评</text>
+      </view>
+    </view>
+  </view>
+    <view class="list_item">
+    <view>
+      <image src="/image/list_01.png" mode="widthFix" style="width:255rpx;"></image>
+    </view>
+    <view class="content">
+      <text class="name">蓝帆24双劳保手套棉纱线手套防滑棉线尼龙工作加厚防护劳保用居上海市</text>
+      <text class="price">￥59.00</text>
+      <view class="info">
+        <text>3052条评价</text>
+        <text style="margin-left:30rpx;">97%好评</text>
+      </view>
+    </view>
+  </view>
+</view>

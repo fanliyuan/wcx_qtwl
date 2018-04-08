@@ -1,0 +1,17 @@
+.qt_search{
+  height:90rpx;
+  width:750rpx;
+  position:relative;
+  background:#fff;
+  padding:0 20rpx;
+  box-sizing:border-box;
+}
+.qt_search .search_all{
+  background:#F4F9FB;
+}
+.qt_search navigator{
+  float:right;
+  line-height:90rpx;
+  font-size:32rpx;
+  color:#333;
+}

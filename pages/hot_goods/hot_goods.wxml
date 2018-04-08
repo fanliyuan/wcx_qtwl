@@ -1,0 +1,20 @@
+<import src="/template/template.wxml"/>
+<view id="hot_title">
+  <view class="title">
+    <text class="fir">热卖榜</text> 
+    <text class="sec">已开抢</text>
+  </view>
+ <view class="title active">
+    <text class="fir">15:00</text> 
+    <text class="sec">即将开抢</text>
+  </view>
+   <view class="title">
+    <text class="fir">17:00</text> 
+    <text class="sec">即将开抢</text>
+  </view>
+   <view class="title">
+    <text class="fir">19:00</text> 
+    <text class="sec">即将开抢</text> 
+  </view>
+</view>
+<template is="goods_team_buy" data="{{...data_list}}"></template>
